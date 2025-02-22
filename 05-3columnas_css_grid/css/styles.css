@@ -49,3 +49,29 @@ p {
 
 
 /** CODIGO AQUI **/
+/* @media (min-width: 768px) {
+    .contenedor_grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: "izquierda contenido derecha";
+        column-gap: 2rem;
+    }
+    .main {
+        grid-area: contenido;
+    }
+} */
+
+@media (min-width: 768px) {
+    .contenedor_grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+    .main {
+        grid-column: 2 / 3;
+    }
+    .sidebar1 {
+        grid-column: 1 / 2;
+    }
+}
