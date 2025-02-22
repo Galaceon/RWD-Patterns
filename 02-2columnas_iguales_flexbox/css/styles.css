@@ -39,3 +39,7 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+.contenedor {
+    display: flex;
+    column-gap: 2rem;
+}
