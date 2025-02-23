@@ -48,3 +48,46 @@ p {
 }
 
 /** CODIGO AQUI **/
+/* @media (min-width: 480px) {
+    .contenedor_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contenido_principal,
+    .primera {
+        flex-basis: calc(50% - 1rem);
+    }
+    .segunda {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido_principal,
+    .primera,
+    .segunda {
+        flex-basis: calc(33% - 2rem);
+    }
+} */
+
+@media (min-width: 480px) {
+    .contenedor_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contenido_principal,
+    .primera {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido_principal,
+    .primera,
+    .segunda {
+        flex-basis: calc(33% - 2rem);
+    }
+}
